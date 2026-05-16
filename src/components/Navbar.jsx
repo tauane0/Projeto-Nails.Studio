@@ -15,10 +15,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'Início', href: '#hero' },
-    { label: 'Cores', href: '#cores' },
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Galeria', href: '#galeria' },
+    { label: 'Início', href: '/#hero' },
+    { label: 'Cores', href: '/#cores' },
+    { label: 'Serviços', href: '/#servicos' },
+    { label: 'Galeria', href: '/#galeria' },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-20">
-            <a href="#hero" className="font-heading text-2xl font-bold text-foreground tracking-wide">
+            <a href="/" className="font-heading text-2xl font-bold text-foreground tracking-wide">
               Nails<span className="text-accent">.</span>Studio
             </a>
 
