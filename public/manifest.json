@@ -1,0 +1,16 @@
+{
+  "name": "Nails.Studio",
+  "short_name": "Nails.Studio",
+  "description": "Studio de unhas profissional",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

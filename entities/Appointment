@@ -1,0 +1,59 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Nome completo do cliente"
+    },
+    "client_email": {
+      "type": "string",
+      "description": "E-mail do cliente"
+    },
+    "client_phone": {
+      "type": "string",
+      "description": "Telefone do cliente"
+    },
+    "service": {
+      "type": "string",
+      "enum": [
+        "Manicure Cl\u00e1ssica",
+        "Unhas em Gel",
+        "Nail Art",
+        "Spa dos P\u00e9s"
+      ],
+      "description": "Servi\u00e7o escolhido"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data do agendamento"
+    },
+    "time": {
+      "type": "string",
+      "description": "Hor\u00e1rio do agendamento"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es adicionais"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "confirmed",
+      "description": "Status do agendamento"
+    }
+  },
+  "required": [
+    "client_name",
+    "client_email",
+    "client_phone",
+    "service",
+    "date",
+    "time"
+  ]
+}
